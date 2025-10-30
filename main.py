@@ -22,13 +22,9 @@ def extract_data():
 
 def compare(A, B, choice):
   if A['follower_count'] >= B['follower_count']:
-    higher = "A"
+    return choice == "A"
   else:
-    higher = "B"
-  if choice == higher:
-    return True
-  else:
-    return False 
+    return choice == "B"
 
 data = game_data.data 
 game_over = False
