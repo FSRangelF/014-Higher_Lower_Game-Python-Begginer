@@ -1,5 +1,4 @@
 import os
-import time
 import random
 import art
 import game_data
@@ -39,10 +38,9 @@ while not game_over:
 
   option_B = extract_data()
 
-  print(f"\nCompare A: {option_A['name']}, a {option_A['description']}, from {option_A['country']}")
-  print("\n")
+  print(f"Compare A: {option_A['name']}, a {option_A['description']}, from {option_A['country']}")
   print(art.vs)
-  print(f"\nAgainst B: {option_B['name']}, a {option_B['description']}, from {option_B['country']}")
+  print(f"Against B: {option_B['name']}, a {option_B['description']}, from {option_B['country']}")
 
   guess = input("Who has more followers? Type 'A' or 'B': ").upper()
   while guess != "A" and guess != "B":
